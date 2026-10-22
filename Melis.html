@@ -17,7 +17,7 @@ background:radial-gradient(120% 80% at 50% 0%,var(--ciruela) 0%,var(--noche) 55%
 body::before{content:"";position:fixed;inset:0;background:var(--stars) 0 0/230px;opacity:.28;animation:tw 7s ease-in-out infinite alternate;pointer-events:none}
 @keyframes tw{to{opacity:.12}}
 h1,h2{font-family:Courgette,cursive;font-weight:400;margin:0;line-height:1.15}
-.scene{z-index:2;position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:28px 20px;text-align:center;overflow-y:auto;opacity:0;visibility:hidden;transition:opacity .9s,visibility .9s}
+.scene{z-index:2;position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:14px;padding:calc(28px + env(safe-area-inset-top,0px)) 20px calc(40px + env(safe-area-inset-bottom,0px));text-align:center;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;opacity:0;visibility:hidden;transition:opacity .9s,visibility .9s}
 .scene.on{opacity:1;visibility:visible}
 .stack{position:relative;z-index:2;width:min(92vw,440px);display:flex;flex-direction:column;align-items:center;gap:14px;margin:auto}
 button{font:800 1.05rem Nunito,sans-serif;cursor:pointer;border:0;border-radius:999px;padding:14px 30px;background:var(--oro);color:var(--tinta);box-shadow:0 8px 26px rgba(255,201,77,.35);transition:transform .2s,box-shadow .2s}
@@ -103,6 +103,10 @@ p{margin:0}
 .giftbtn::before{content:"";position:absolute;inset:-22%;border-radius:50%;background:radial-gradient(circle,rgba(255,201,77,.5),transparent 65%);animation:glow 1.6s ease-in-out infinite alternate;z-index:-1}
 @keyframes glow{to{transform:scale(1.25);opacity:.5}}
 @media (prefers-reduced-motion:reduce){*,*::before{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+#s4 .stack{width:min(92vw,600px)}
+.letter{font-size:1.08rem;line-height:1.7}
+.letter p+p{margin-top:16px}
+.letter .firma{line-height:1.5}
 </style>
 </head>
 <body>
@@ -170,13 +174,129 @@ p{margin:0}
 <!-- 4 · carta -->
 <section class="scene" id="s4" aria-label="Carta">
   <div class="stack">
-    <article class="letter">
-      <h2 id="para">Para ti</h2>
-      <p>¡Hoy el mundo tiene un motivo más para celebrar: tú!</p>
-      <p>Gracias por ser quien eres, por las risas, por los buenos momentos y por estar cuando hace falta. Ojalá este día te llene el corazón tanto como tú llenas el de los demás.</p>
-      <p>Que este nuevo año de vida llegue con salud, con calma y con todo lo que sueñas. Disfrútalo muchísimo. Te lo mereces.</p>
-      <p class="firma" id="firma">Con mucho cariño ♥</p>
-    </article>
+    
+<article class="letter">
+  <h2 id="tpara">Para ti, mi hermanita querida ❤️</h2>
+
+  <p>
+    ¡Hoy te deseo un muy feliz cumpleaños, mi querida Lizet! 🎂
+    Gracias por hacerme compañía, por confiar en mí y por permitirme
+    ser parte de tu vida. Quiero que sepas que te quiero muchísimo,
+    hermanita, más de lo que a veces puedo expresar con palabras.
+    Siempre estaré aquí para ti, para apoyarte, escucharte y recordarte
+    que nunca estarás sola. No dudes en contar conmigo, porque eres
+    una de las personas más importantes de mi vida.
+  </p>
+
+  <p>
+    A veces recuerdo cuando eras pequeña, tu sonrisa, tus travesuras
+    y todas esas pequeñas cosas que hoy guardo con tanto cariño en
+    mi corazón. ¡Cómo pasa el tiempo, hermanita! 🥹 Parece que fue
+    ayer cuando eras esa niña que llenaba de alegría nuestros días,
+    y ahora estás creciendo, persiguiendo tus sueños y convirtiéndote
+    poco a poco en una gran mujer. No sabes lo orgulloso que me siento
+    de ti y de las ganas que tienes de salir adelante.
+  </p>
+
+  <p>
+    Quiero que recuerdes algo muy importante: aunque con el tiempo
+    nuestras vidas tomen caminos diferentes y ya no nos veamos tan
+    seguido como antes, eso nunca cambiará el amor que te tengo.
+    Quizá no pueda acompañarte físicamente en cada paso, pero siempre
+    voy a querer verte crecer, verte feliz y celebrar cada uno de tus
+    logros. Tus victorias también serán motivo de alegría para mí,
+    porque no hay nada que desee más que verte cumplir todo aquello
+    con lo que sueñas.
+  </p>
+
+  <p>
+    Nunca tengas miedo de soñar en grande, mi hermana. No pienses
+    que tus sueños son demasiado grandes para ti ni que hay cosas
+    bonitas que no mereces. Esfuérzate, ten paciencia, confía en ti
+    misma y sigue adelante incluso cuando las cosas no salgan como
+    esperabas. No todo será fácil, pero quiero que nunca olvides
+    lo capaz y valiosa que eres. Y si algún día necesitas una mano
+    para levantarte, alguien que te escuche o un hermano que te anime
+    a seguir, aquí estaré para ayudarte, dentro de mis posibilidades,
+    a luchar por esos sueños.
+  </p>
+
+  <p>
+    Y, por favor, hermanita, nunca pierdas esa sonrisa tan bonita
+    que tienes. ❤️ No permitas que las dificultades, las decepciones
+    ni las palabras de otras personas te quiten esa felicidad que
+    llevas dentro. Cuida tu corazón y nunca te conformes con un cariño
+    a medias. Mereces un amor sincero, personas que te respeten,
+    que te valoren y que se alegren de verte crecer. Nunca aceptes
+    menos de lo que mereces por miedo a quedarte sola. Aprende a
+    elegir aquello que te dé paz y que te haga sentir querida de
+    verdad.
+  </p>
+
+  <p>
+    Sé ambiciosa con la vida, Lizet. ❤️ Atrévete a conocer nuevos
+    caminos, a aprender, a crecer y a luchar por una vida de la que
+    te sientas orgullosa. No necesitas tenerlo todo resuelto ahora
+    mismo. Puedes equivocarte, cansarte, llorar y volver a empezar.
+    Lo importante es que nunca dejes de creer en ti. Yo confío en ti,
+    hermanita, y deseo que algún día puedas mirarte con el mismo
+    cariño y orgullo con el que te mira tu hermano.
+  </p>
+
+  <p>
+    Quiero que sepas que no te prometo que podré resolver todos tus
+    problemas, pero sí quiero que tengas la seguridad de que siempre
+    tendrás a tu hermanito para apoyarte. Quiero estar en tus alegrías,
+    celebrar tus metas, animarte en los días difíciles y recordarte
+    lo mucho que vales cuando tú misma lo olvides. No tengas miedo
+    de luchar por lo que quieres. Sigue esforzándote un poquito más,
+    ten paciencia con tu proceso y no abandones tus sueños. Paso a
+    paso, con esfuerzo y confianza, podrás llegar mucho más lejos
+    de lo que imaginas.
+  </p>
+
+  <p>
+    No sé qué nos traerán los próximos años ni qué caminos tendremos
+    que recorrer, pero sí sé que siempre tendrás un lugar muy especial
+    en mi corazón. Porque, por más que crezcas, por más que cambien
+    nuestras vidas y por más que ya no nos veamos tan seguido,
+    siempre serás mi hermanita querida, esa niña de sonrisa bonita
+    y travesuras que llevo conmigo en mis recuerdos. Y siempre
+    voy a querer verte feliz, cumpliendo tus metas y construyendo
+    esa vida bonita que mereces.
+  </p>
+
+  <p>
+    Que este nuevo año de vida llegue con mucha salud, tranquilidad,
+    nuevas oportunidades, personas buenas y motivos para sonreír.
+    Que la vida te permita cumplir esos sueños que guardas en tu
+    corazón y que nunca te falten la fuerza, la esperanza y el valor
+    para perseguirlos. Disfruta muchísimo tu día, hermanita.
+    Celebra la persona que eres y todo lo bonito que todavía te
+    queda por vivir. ¡Te lo mereces! 🎂✨
+  </p>
+
+  <p>
+    Feliz cumpleaños, mi querida Lizet. Nunca olvides que tu
+    hermanito cree en ti, confía en ti y estará feliz de verte
+    alcanzar cada una de tus metas. Sigue creciendo, sigue luchando,
+    sigue sonriendo y nunca tengas miedo de soñar en grande.
+    Aunque no siempre pueda estar físicamente a tu lado, mi cariño
+    te acompañará en cada etapa de tu vida.
+  </p>
+
+  <p>
+    Y si algún día el mundo se te hace demasiado difícil, hermanita,
+    recuerda que tienes un hermano que, desde el corazón, siempre
+    va a querer verte feliz. ❤️
+  </p>
+
+  <p class="firma" id="firma">
+    Con todo mi cariño, hoy y siempre,<br>
+    tu hermanito, que te quiere más de lo que imaginas. ♥
+  </p>
+</article>
+
     <button class="ghost" id="again">Ver otra vez</button>
   </div>
 </section>
@@ -190,7 +310,7 @@ let hash = ""; try { hash = decodeURIComponent(location.hash.slice(1)).replace(/
 const NAME = (hash || CONFIG.nombre).trim();
 if (NAME) {
   $("#title").textContent = "¡Feliz cumpleaños, " + NAME + "!";
-  $("#para").textContent = "Para " + NAME;
+  
 }
 if (CONFIG.de) $("#firma").textContent = "Con mucho cariño, " + CONFIG.de + " ♥";
 function letters(el) {
@@ -214,7 +334,7 @@ $$("[data-from]").forEach(i => i.src = document.getElementById(i.dataset.from).s
 document.documentElement.style.setProperty("--stars", "url(" + $("#starsImg").src + ")");
 
 let rainOn = false;
-const go = id => $$(".scene").forEach(s => { const on = s.id === id; s.classList.toggle("on", on); s.inert = !on; });
+const go = id => $$(".scene").forEach(s => { const on = s.id === id; s.classList.toggle("on", on); s.inert = !on; if (on) s.scrollTop = 0; });
 go("s1");
 
 /* Sonido: cajita musical y efectos generados en el navegador */
@@ -319,6 +439,10 @@ $("#again").onclick = () => {
   $("#hint").textContent = "¡Cierra los ojos, pide un deseo y sopla las velas!";
   $("#blow").textContent = "Soplar las velas"; show(0); go("s1");
 };
+document.addEventListener("visibilitychange", () => {
+  if (!ctx) return;
+  if (document.hidden) ctx.suspend(); else ctx.resume();
+});
 </script>
 </body>
 </html>
